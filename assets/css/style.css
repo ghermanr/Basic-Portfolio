@@ -1,11 +1,18 @@
 body {
-    background-color: rgba(201, 208, 211, 0.966);
+    background: url("../images/gravel.png")
 }
 
 h1 {
     color: #4aaaa5;
     text-emphasis: bold;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
+
+p {
+    color: #777777;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
 
 a:link {
     color: #777777;
@@ -30,7 +37,7 @@ a:hover {
     position: fixed;
     top:0;
     left: 0;
-          
+    z-index: 100;
 }
 
 #NameBox {
@@ -55,7 +62,24 @@ a:hover {
     line-height: 75px;
     font-size: 20px;
     padding-left: 550px;
+    padding-right: 100px;
+    float: right;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+#footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: gray;
+    border-top-style: solid;
+    border-top-color: aqua;
+    border-top-width: 3px;
+    height: 40px;
+    width: 100%;
+    
+}    
+     
+/* About page */
 
 #containerAbout {
     background-color: #ffffff; 
@@ -69,6 +93,16 @@ a:hover {
     text-justify: inter-ideograph;
 }
 
+#ProfileImg {
+    width: 150px;
+    height: 150px;
+    border-color: aqua;
+    float: left;
+    margin: 20px;
+}
+
+/* Contact Page */
+
 #containerContact {
     background-color: #ffffff; 
     overflow: auto;
@@ -78,47 +112,7 @@ a:hover {
     margin-top: 50px;
     margin: 120px auto 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-#containerPortfolio {
-    background-color: #ffffff; 
-    overflow: auto;
-    clear:left;
-    width: 700px;
-    padding: 10px;
-    margin-top: 50px;
-    margin: 120px auto 0;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    position: relative;
-}
-
-#ProfileImg {
-    width: 150px;
-    height: 150px;
-    border-color: aqua;
-    float: left;
-    margin: 20px;
-}
-
-p {
     color: #777777;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-}
-
-#footer {
-    text-align: center;
-    color: #ffffff;
-    background-color: gray;
-    border-top-style: solid;
-    border-top-color: aqua;
-    border-top-width: 3px;
-    height: 40px;
-    position: absolute;
-    width: 100%;
-    bottom:0;
-    left: 0;
-    overflow: hidden;
-    float: right;
 }
 
 #FName {
@@ -137,10 +131,27 @@ p {
     margin-bottom: 20px;
 }
 
+
+
+/* Portfolio without Bootstrap */
+
 .img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 190px;
 }
+
+#containerPortfolio {
+    background-color: #ffffff; 
+    overflow: auto;
+    clear:left;
+    width: 860px;
+    padding: 10px;
+    margin-top: 50px;
+    margin: 120px auto 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    position: relative;
+}
+
 
 .PicTable {
     margin: 0 auto;
@@ -153,8 +164,8 @@ p {
 
 
 .button {
-    width: 150px;
-    height: 30px;
+    width: 180px;
+    height: 20px;
     color: white;
     background-color: green;
     text-align: center;
@@ -162,12 +173,15 @@ p {
     z-index: 100;
     top: -50;
     padding-bottom: 10px;
+    padding: 10px;
+    text-align: wrap;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     
 }
 
 .PicContainer {
-    width: 160;
-    height: 160;
+    width: 200;
+    height: 190;
     position: relative;
        
 }
